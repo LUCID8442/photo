@@ -1,0 +1,17 @@
+<!-- image_upload/templates/image_upload/image_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image List</title>
+</head>
+<body>
+    <h1>Image List</h1>
+    {% for image in images %}
+        <div>
+            <h3>{{ image.title }}</h3>
+            <img src="{{ image.image.url }}" alt="{{ image.title }}">
+        </div>
+    {% endfor %}
+</body>
+</html>
